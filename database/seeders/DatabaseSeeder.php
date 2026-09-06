@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
         $admin = User::updateOrCreate(['email' => 'test@example.com'], [
             'name' => 'Test User',
             'password' => 'password',
+            'email_verified_at' => now(),
         ]);
 
         $admin->assignRole('Super Admin');

@@ -26,6 +26,11 @@
 
             <p class="sidebar-label mt-9">Akun</p>
             <div class="mt-3 space-y-1">
+                @can('manage master')
+                <a href="{{ route('jenis-surat.index') }}" class="sidebar-link {{ request()->routeIs('jenis-surat.*') ? 'sidebar-link-active' : '' }}"><span class="sidebar-icon">▤</span><span>Jenis surat</span></a>
+                <a href="{{ route('outgoing-letter-templates.index') }}" class="sidebar-link {{ request()->routeIs('outgoing-letter-templates.*') ? 'sidebar-link-active' : '' }}"><span class="sidebar-icon">▧</span><span>Template surat</span></a>
+                <a href="{{ route('outgoing-letter-number-settings.edit') }}" class="sidebar-link {{ request()->routeIs('outgoing-letter-number-settings.*') ? 'sidebar-link-active' : '' }}"><span class="sidebar-icon">#</span><span>Penomoran surat</span></a>
+                @endcan
                 @can('manage school settings')
                 <a href="{{ route('school-settings.edit') }}" class="sidebar-link {{ request()->routeIs('school-settings.*') ? 'sidebar-link-active' : '' }}"><span class="sidebar-icon">⚙</span><span>Pengaturan sekolah</span></a>
                 @endcan

@@ -114,6 +114,12 @@
 	.status-baru { background: #eaf2ff; color: #2563eb; }
 	.status-didisposisikan { background: #fff6df; color: #a56800; }
 	.status-selesai { background: #e7f8f0; color: #078653; }
+	.status-draft { background: #eef2f7; color: #526074; }
+	.status-menunggu_verifikasi { background: #fff6df; color: #a56800; }
+	.status-disetujui, .status-sudah_ditandatangani { background: #e7f8f0; color: #078653; }
+	.status-ditolak { background: #ffedf0; color: #d13f5b; }
+	.status-sudah_dikirim { background: #eaf2ff; color: #2563eb; }
+	.status-diarsipkan { background: #f1edff; color: #7654c7; }
 	.table-action { display: grid; height: 1.9rem; width: 1.9rem; place-items: center; border: 1px solid #e1e7ef; border-radius: .5rem; color: #64748b; font-size: .85rem; transition: all .2s; }
 	.table-action:hover { border-color: #0f766e; background: #e8f5f3; color: #0f766e; }
 	.table-action-danger:hover { border-color: #f2a1ad; background: #fff0f2; color: #d13f5b; }

@@ -17,4 +17,9 @@ class JenisSurat extends Model
     {
         return $this->hasMany(IncomingLetter::class, 'sifat_id');
     }
+
+    public function outgoingLetters()
+    {
+        return $this->hasMany(OutgoingLetter::class, 'jenis_surat_id');
+    }
 }
